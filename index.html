@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjay A - Resume</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+      background-color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+    }
+    header {
+      height: 52px;
+      background: #1e1e1e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 15px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+    .btn-secondary {
+      background: #374151;
+      color: #f3f4f6;
+    }
+    .btn-secondary:hover {
+      background: #4b5563;
+    }
+    .viewer-container {
+      width: 100%;
+      height: calc(100% - 52px);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sanjay A — Resume</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="Sanjay_A_Resume.pdf" target="_blank">Open Fullscreen</a>
+      <a class="btn btn-primary" href="Sanjay_A_Resume.pdf" download>Download PDF</a>
+    </div>
+  </header>
+  <div class="viewer-container">
+    <iframe src="Sanjay_A_Resume.pdf#toolbar=1" type="application/pdf">
+      <p style="color: white; text-align: center; padding-top: 50px;">
+        It looks like your browser doesn't support embedded PDFs.
+        <a href="Sanjay_A_Resume.pdf" style="color: #60a5fa;">Click here to view or download the PDF</a>.
+      </p>
+    </iframe>
+  </div>
+</body>
+</html>
